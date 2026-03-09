@@ -8,17 +8,17 @@
   <body>
     <h1>Dog Adoption Form</h1>
 
-    <form>
+    <form id="adoptForm">
       <h3>Personal Information</h3>
 
       <label>Full Name:</label><br />
-      <input type="text" name="fullname" required /><br /><br />
+      <input type="text" id="fullname" name="fullname" /><br /><br />
 
       <label>Email:</label><br />
       <input type="email" name="email" required /><br /><br />
 
       <label>Phone Number:</label><br />
-      <input type="tel" name="phone" /><br /><br />
+      <input type="tel" id="phone" name="phone" /><br /><br />
 
       <label>Address:</label><br />
       <input type="text" name="address" required /><br /><br />
@@ -51,14 +51,17 @@
 
       <h3>Number of Dogs You Want to Adopt</h3>
 
-      <input type="number" name="numberOfDogs" min="1" max="5" />
+      <input type="number" id="pets" name="numberOfDogs" min="0" max="100" />
 
       <br /><br />
 
       <h3>Agreement</h3>
 
-      <input type="checkbox" required />
-      <label>Submitting this form indicates interest only and does not guarantee adoption approval.</label>
+      <input type="checkbox" id="agree" />
+      <label
+        >Submitting this form indicates interest only and does not guarantee
+        adoption approval.</label
+      >
 
       <br /><br />
 
@@ -68,5 +71,7 @@
     <br /><br />
 
     <a href="index.html">Back to Dog List</a>
+
+    <script src="adoptme.js"></script>
   </body>
 </html>
