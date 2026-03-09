@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Adopt Me</title>
+  </head>
+
+  <body>
+    <h1>Dog Adoption Form</h1>
+
+    <form>
+      <h3>Personal Information</h3>
+
+      <label>Full Name:</label><br />
+      <input type="text" name="fullname" required /><br /><br />
+
+      <label>Email:</label><br />
+      <input type="email" name="email" required /><br /><br />
+
+      <label>Phone Number:</label><br />
+      <input type="tel" name="phone" /><br /><br />
+
+      <label>Address:</label><br />
+      <input type="text" name="address" required /><br /><br />
+
+      <h3>Living Environment</h3>
+
+      <label>Type of Home:</label><br />
+
+      <select name="home">
+        <option>Apartment</option>
+        <option>Condominium</option>
+        <option>House</option>
+        <option>Farm</option>
+      </select>
+
+      <br /><br />
+
+      <h3>Preferred Dog Size</h3>
+
+      <input type="radio" name="dogsize" value="small" />
+      <label>Small</label><br />
+
+      <input type="radio" name="dogsize" value="medium" />
+      <label>Medium</label><br />
+
+      <input type="radio" name="dogsize" value="large" />
+      <label>Large</label><br />
+
+      <br />
+
+      <h3>Number of Dogs You Want to Adopt</h3>
+
+      <input type="number" name="numberOfDogs" min="1" max="5" />
+
+      <br /><br />
+
+      <h3>Agreement</h3>
+
+      <input type="checkbox" required />
+      <label>Submitting this form indicates interest only and does not guarantee adoption approval.</label>
+
+      <br /><br />
+
+      <input type="submit" value="Submit Adoption Form" />
+    </form>
+
+    <br /><br />
+
+    <a href="index.html">Back to Dog List</a>
+  </body>
+</html>
